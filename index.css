@@ -598,7 +598,7 @@ footer{
     }
 
     .contact-section .container input{
-        width: 32.3%;
+        width: 32.7%;
     }
 
     .clients-section .container{
@@ -624,5 +624,9 @@ footer{
 
     .gallery-section .container{
         grid-template-columns: 1fr;
+    }
+    
+    .contact-section .container input{
+        width: 100%;
     }
 }
