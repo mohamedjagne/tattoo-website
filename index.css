@@ -330,6 +330,10 @@
     font-weight: 700;
 }
 
+.contact-section .container textarea{
+    padding: 0.7em 1em;
+}
+
 .clients-section{
     background-color: var(--primary-color);
     padding: 5em 1em;
