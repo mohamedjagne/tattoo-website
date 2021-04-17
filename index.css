@@ -580,6 +580,10 @@ footer{
     .welcome-section .container img{
         width: 100%;
     }
+    
+    .working-section{
+        background-attachment: scroll;
+    }
 
     .service-section .container{
         margin: 0 10%;
