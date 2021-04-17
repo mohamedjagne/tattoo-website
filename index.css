@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
+
+:root{
+    --font-body: 'Poppins', sans-serif;
+    --font-title: 'Oswald', sans-serif;
+    --font-hero: 'UnifrakturCook', cursive;
+    --font-nav: 'Rye', cursive;
+
+    --primary-color: #0A0F13;
+    --secondary-color: #C09457;
+    --text-color: #ABAAAB;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+    color: var(--text-color);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 6em;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-list ul li{
+    display: inline-block;
+}
+
+.nav-list ul li a{
+    color: #FFFFFF;
+    font-family: var(--font-nav);
+    text-transform: uppercase;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: all 0.2s;
+}
+
+.nav-list ul li a:hover{
+    color: var(--secondary-color);
+}
+
+.logo img{
+    width: 200px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hero-section{
+    background-image: url(images/hero-img.png);
+    height: 45em;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay{
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    top: 0;
+}
+
+.hero-content{
+    max-width: 500px;
+    margin: 5em auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-content img{
+    width: 200px;
+}
+
+.hero-content h1{
+    font-size: 3em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: var(--font-hero);
+}
+
+.hero-content p{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.welcome-section{
+    background-color: var(--primary-color);
+    padding: 5em 1em;
+}
+
+.welcome-section .container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.welcome-section .text .title h1{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.welcome-section .text .text-1{
+    color: #FFFFFF;
+    margin: 1em 0;
+}
+
+.welcome-section .text .subtitle{
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.welcome-section .container .text-2{
+    color: #FFFFFF;
+    margin: 1em 0;
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.readme-btn a button{
+    padding: 0.6em 2em;
+    cursor: pointer;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    background: transparent;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.readme-btn a button:hover{
+    border-color: #FFFFFF;
+    background: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.booknow-btn a button{
+    padding: 0.6em 2em;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.booknow-btn a button:hover{
+    color: var(--secondary-color);
+    background: #FFFFFF;
+}
+
+.service-section{
+    background: var(--primary-color);
+}
+
+.service-section .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.service-section .container i{
+    color: var(--secondary-color);
+    background: #191B1D;
+    font-size: 4em;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-bottom: 0.3em;
+}
+
+.service-section .title{
+    padding: 3em 0;
+    position: relative;
+}
+
+.service-section .title p{
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+.service-section .title h1{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+    font-size: 2em;
+}
+
+.service-section p{
+    font-size: 0.8em;
+}
+
+.service-section .container h1{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.service-section .title{
+    text-align: center;
+}
+
+.artists-section{
+    background: var(--primary-color);
+    padding: 3em 0;
+}
+
+.artists-section .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.artists-section img{
+    width: 90%;
+}
+
+.artists-section .title{
+    text-align: center;
+    padding: 3em 0;
+}
+
+.artists-section .title p{
+    color: var(--secondary-color);
+}
+
+.artists-section .title h1{
+    color: #FFFFFF;
+    font-size: 2em;
+    font-family: var(--font-title);
+}
+
+.artists-section .container h3{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.artists-section p{
+    color: var(--secondary-color);
+    font-size: 0.8em;
+}
+
+.artists-section .social-media i{
+    color: var(--secondary-color);
+    background: #191B1D;
+    font-size: 1.5em;
+    padding: 0.2em;
+    border-radius: 50%;
+}
+
+.artists-section .social-media{
+    margin-top: 0.7em;
+}
+
+.contact-section{
+    background: #191B1D;
+    padding: 5em 1em;
+}
+
+.contact-section .container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-section .title{
+    text-align: center;
+    padding: 3em 0
+}
+
+.contact-section .title p{
+    color: var(--secondary-color);
+}
+
+.contact-section .title h1{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+}
+
+.contact-section form input{
+    padding: 0.7em 1em;
+    margin: 1em 0;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    outline-color: var(--secondary-color);
+    outline: none;
+    width: 32.8%;
+}
+
+.contact-section .container textarea{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.contact-section .container button[type=submit]{
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color:#FFFFFF;
+    border-radius: 5em;
+    padding: 0.7em;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.clients-section{
+    background-color: var(--primary-color);
+    padding: 5em 1em;
+}
+
+.clients-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+.clients-section .title{
+    padding: 3em 0;
+    text-align: center;
+}
+
+.clients-section .title p{
+    color: var(--secondary-color);
+}
+
+.clients-section .title h1{
+    color: #FFFFFF;
+    font-family: var(--font-title);
+    font-size: 2em;
+}
+
+.mary,.joe{
+    text-align: right;
+}
+
+.clients-section .container img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.clients-section .container h5{
+    color: #FFFFFF;
+}
+
+.working-section{
+    background-image: url(images/working-img.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.working-section .title{
+    background: #000000;
+    opacity: .8;
+    text-align: center;
+    padding: 5em 1em 0 1em;
+}
+
+.working-section .container{
+    background-color: #000000;
+    opacity: 0.8;
+    padding: 4em 1em;
+}
+
+.working-section .title p{
+    color: var(--secondary-color);
+}
+
+.working-section .title h1{
+    color: #FFFFFF;
+    font-size: 2em;
+    font-family: var(--font-title);
+}
+
+.call-us{
+    text-align: center;
+}
+
+.call-us h1{
+    color: #FFFFFF;
+    font-size: 2.2em;
+    font-family: var(--font-title);
+}
+
+.days{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    max-width: 1100px;
+    margin: 2em auto;
+    grid-gap: 1em;
+}
+
+.days h1,p{
+    color: #FFFFFF;
+}
+
+.mon,.tues,.wed,.thur,.fri,.sat{
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    padding: 0.5em;
+}
+
+.sun{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.sun h1{
+    color: #FFFFFF;
+}
+
+span{
+    color: var(--secondary-color);
+    font-family: var(--font-title);
+}
+
+.gallery-section{
+    background-color: var(--primary-color);
+}
+
+.gallery-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5em 0;
+}
+
+.gallery-section .title{
+    text-align: center;
+    padding-top: 4em;
+}
+
+.gallery-section .title p{
+    color: var(--secondary-color);
+}
+
+.gallery-section .title h1{
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-family: var(--font-title);
+}
+
+.tatoo-1,.tatoo-2,.tatoo-3,.tatoo-4,.tatoo-5,.tatoo-6,.tatoo-7,.tatoo-8,.tatoo-9{
+    position: relative;
+}
+
+.tatoo-overlay{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--primary-color);
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tatoo-overlay h4{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+}
+
+.tatoo-overlay:hover{
+    opacity: 0.6;
+}
+
+.gallery-section .container img{
+    width: 100%;
+}
+
+.gallery-section .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+.gallery-section .contact i{
+    font-size: 4em;
+    margin-bottom: 0.3em;
+    color: var(--secondary-color);
+}
+
+footer{
+    background: #191B1D;
+    padding: 1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.nav-list.show{
+    display: block;
+}
+
+@media only screen and (max-width: 920px){
+    .navigation{
+        display: block;
+        padding: 0;
+        background: #000000;
+    }
+
+    .logo{
+        padding: 1em;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+    
+    .hamburger{
+        display: block;
+        float: right;
+        margin-top: -3.5em;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+
+    .hamburger i{
+        font-size: 2em;
+    }
+
+    .nav-list{
+        padding: 0 1.5em 1.5em 1.5em;
+        background-color: #000000;
+        display: none;
+    }
+
+    .hero-section{
+        background-attachment: scroll;
+    }
+
+    .nav-list ul li{
+        display: block;
+        line-height: 2em;
+    }
+
+    .nav-list ul li a{
+        font-family: var(--font-body);
+    }
+
+    .welcome-section .container{
+        display: block;
+    }
+
+    .welcome-section .container img{
+        width: 100%;
+    }
+
+    .service-section .container{
+        margin: 0 10%;
+    }
+
+    .artists-section .container{
+        grid-row-gap: 1em;
+    }
+
+    .gallery-section .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-section .container input{
+        width: 32.3%;
+    }
+
+    .clients-section .container{
+        grid-template-columns: 1fr;
+    }
+
+    .days{
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    .days{
+        grid-template-columns: auto;
+    }
+
+    
+    .gallery-section .contact{
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5em;
+    }
+
+    .gallery-section .container{
+        grid-template-columns: 1fr;
+    }
+}
